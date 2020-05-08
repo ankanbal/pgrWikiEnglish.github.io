@@ -1,1 +1,3 @@
 # pgrWikiEnglish.github.io
+
+Will start working on the Punishing Gray Raven's English Official Wiki here...
