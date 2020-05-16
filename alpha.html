@@ -2,65 +2,17 @@
 <html>
 <head>
 	<title>Crimson Abyss</title>
-<style>
-	.tb1, .tb2, .tb3, .tb4, .tb5, td{
-		border-collapse: collapse;
-		border: 1px solid black;
-		text-align: center;
-	}
-	.char, .orbs, .passives, .main, .skills, .passive{
-		border-style: dotted;
-	}
-</style>
 </head>
-<body>
-<div class = "main">
-<table class="tb1">
-	<tr>
-		<td>Initial Grade</td>
-		<td>S</td>
-		<td>Japanese VA</td>
-		<td>Ishikawa Yui</td>
-	</tr>
-	<tr>
-		<td>Body Type</td>
-		<td>Offensive</td>
-		<td>Mandarin VA</td>
-		<td>Little N</td>
-	</tr>
-	<tr>
-		<td>Arms</td>
-		<td>Tai Dao</td>
-		<td>Cantonese VA</td>
-		<td>Tail Fox Hall</td>
-	</tr>
-	<tr>
-		<td>Attack Type</td>
-		<td>Melee</td>
-		<td>Circulating fluid</td>
-		<td>Type A</td>
-	</tr>
-	<tr>
-		<td>height</td>
-		<td>165cm</td>
-		<td>weight</td>
-		<td>45kg</td>
-	</tr>
-	<tr>
-		<td>Age</td>
-		<td>17 years old</td>
-		<td>Affiliated troops</td>
-		<td>Upgrader</td>
-	</tr>
-	<tr>
-		<td>Energy parameter</td>
-		<td colspan="3">Physics 100%</td>
-	</tr>
-</table>
-</div>
-<br><br><br>
-<div class = "char">
+<meta name = "viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<body style="background-image: url('pgr1.jpeg')">
+<div class="content">
+<div style=" overflow: auto">
+<div class = "char" style="float: right" >
 	<table class="tb2">
+		<tr>
+			<th colspan="2" height="50px"><h1>Lucia Crimson Abyss</h1></th>
+		</tr>
 		<tr>
 			<td colspan="2">
 				<img src="luciaS/LuciaS.png">
@@ -75,43 +27,73 @@
 			<td><img src="luciaS/attack.png"></td>
 		</tr>
 		<tr>
+			<th>Arms Type</th>
+			<td><img src="luciaS/katana.png"></td>
+		</tr>
+		<tr>
 			<th>Type</th>
 			<td>100% Physical</td>
 		</tr>
 		<tr>
-			<th>Arms Type</th>
-			<td><img src="luciaS/katana.png"></td>
+			<th>Height</th>
+			<td>165cm</td>
+		</tr>
+		<tr>
+			<th>Age</th>
+			<td>17 years</td>
+		</tr>
+		<tr>
+			<th rowspan="4">Voice actors</th>
+		</tr>
+		<tr>
+			<td>Ishikawa Yui</td>
+		</tr>
+		<tr>
+			<td>Little N</td>
+		</tr>
+		<tr>
+			<td>Tail Fox Hall</td>
 		</tr>
 	</table>
 </div>
-<br><br><br>
-<div class = "orbs">
-	<table class="tb3">
-		<tr>
-			<td rowspan="2"><img src="luciaS/red.png"></td>
-			<td>Flashing attack the target in front of the range, according to the number of balls eliminated, each attack causes 12.5% ​​/ 25% / 37.5% physical damage, and the last attack at 3 eliminates an additional 37.5% physical damage and strikes the target, releasing the process Chinese domineering body.</td>
-		</tr>
-		<tr>
-			<td>Flashing attack the target in front of the range, according to the number of balls eliminated, each attack causes 25% / 50% / 75% physical damage, and the last attack at 3 eliminates an additional 75% physical damage and strikes the target, releasing the process Chinese domineering body.</td>
-		</tr>
-		<tr>
-			<td rowspan="2"><img src="luciaS/yellow.png"></td>
-			<td>Assault forward and pass passing enemies, damaging targets along the way, causing 100% / 200% / 300% physical damage based on the number of balls eliminated.</td>
-		</tr>
-		<tr>
-			<td>Assault forward and pass passing enemies, damaging targets along the way, causing 200% / 400% / 600% physical damage based on the number of balls eliminated.</td>
-		</tr>
-		<tr>
-			<td rowspan="2"><img src="luciaS/blue.png"></td>
-			<td>Strengthen your energy supply for 5 seconds, increase your movement speed by 20% / 30% / 50% according to the number of balls eliminated, and add 2 additional physical damage of 2% / 4% / 6% based on the number of balls eliminated when attacking . When the sword energy is released, the extra damage will be enhanced to release the extra sword energy, and each piece of sword energy causes 4% / 8% / 12% physical damage.</td>
-		</tr>
-		<tr>
-			<td>Strengthen your energy supply, increase your movement speed by 20% / 30% / 50% according to the number of balls eliminated, and add 2 additional physical damage of 4% / 8% / 12% based on the number of balls eliminated when attacking. When the sword energy is released, the extra damage will be enhanced to release the extra sword energy, each piece of sword energy causes 8% / 16% / 24% physical damage.</td>
-		</tr>
-	</table>
+<h1>Introduction</h1>
+The mysterious enemies who met the Grey Raven Squad for the first time in the operation of City 015 left a strong and casual impression. There seems to be unusual attention to the Grey Raven Squad, especially Lucia.
 </div>
-<br><br><br>
-<div class = "skills">
+
+<div class>
+		<div class="tab">
+		  <button class="button" style="vertical-align:middle" onclick="openCity(event, 'orb')" id="defaultOpen"><span>Orbs</span></button>
+		  <button class="button" style="vertical-align:middle" onclick="openCity(event, 'skills')"><span>Skills</span></button>
+		  <button class="button" style="vertical-align:middle" onclick="openCity(event, 'passive')"><span>Passive</span></button>
+		</div>
+
+		<div class = "tabcontent" id = "orb" >
+		<table class="tb3">
+			<tr>
+				<td rowspan="2"><img src="luciaS/red.png"></td>
+				<td>Flashing attack the target in front of the range, according to the number of balls eliminated, each attack causes 12.5% ​​/ 25% / 37.5% physical damage, and the last attack at 3 eliminates an additional 37.5% physical damage and strikes the target, releasing the process Chinese domineering body.</td>
+			</tr>
+			<tr>
+				<td>Flashing attack the target in front of the range, according to the number of balls eliminated, each attack causes 25% / 50% / 75% physical damage, and the last attack at 3 eliminates an additional 75% physical damage and strikes the target, releasing the process Chinese domineering body.</td>
+			</tr>
+			<tr>
+				<td rowspan="2"><img src="luciaS/yellow.png"></td>
+				<td>Assault forward and pass passing enemies, damaging targets along the way, causing 100% / 200% / 300% physical damage based on the number of balls eliminated.</td>
+			</tr>
+			<tr>
+				<td>Assault forward and pass passing enemies, damaging targets along the way, causing 200% / 400% / 600% physical damage based on the number of balls eliminated.</td>
+			</tr>
+			<tr>
+				<td rowspan="2"><img src="luciaS/blue.png"></td>
+				<td>Strengthen your energy supply for 5 seconds, increase your movement speed by 20% / 30% / 50% according to the number of balls eliminated, and add 2 additional physical damage of 2% / 4% / 6% based on the number of balls eliminated when attacking . When the sword energy is released, the extra damage will be enhanced to release the extra sword energy, and each piece of sword energy causes 4% / 8% / 12% physical damage.</td>
+			</tr>
+			<tr>
+				<td>Strengthen your energy supply, increase your movement speed by 20% / 30% / 50% according to the number of balls eliminated, and add 2 additional physical damage of 4% / 8% / 12% based on the number of balls eliminated when attacking. When the sword energy is released, the extra damage will be enhanced to release the extra sword energy, each piece of sword energy causes 8% / 16% / 24% physical damage.</td>
+			</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent" id = "skills">
 	<table class="tb4">
 		<tr>
 			<td rowspan="2"><img src="luciaS/basic.png"></td>
@@ -147,8 +129,8 @@
 		</tr>
 	</table>
 </div>
-<br><br><br>
-<div class = "passive">
+
+<div class = "tabcontent" id = "passive">
 	<table class="tb5">
 		<tr>
 			<td rowspan="2"><img src="luciaS/passive1.png"></td>
@@ -174,6 +156,28 @@
 			<td>In the blue ball state, physical damage is increased by 15%.</td>
 		</tr>
 	</table>
+</div>
+
+		
+		<script>
+			function openCity(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+			    tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+			    tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+
+// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+		</script>
+</div>
 </div>
 </body>
 </html>
