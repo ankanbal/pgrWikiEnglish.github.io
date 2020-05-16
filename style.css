@@ -1,0 +1,117 @@
+.content{
+  width: 1000px;
+  height: 2000px;
+  position: relative;
+  left:220px;
+  z-index: 10;
+  background-color: #ffffff;	
+	}
+	td, th{
+		border-collapse: collapse;
+		border: 1px solid black;
+		text-align: center;
+	}
+	.tb1, .tb3, .tb4, .tb5{
+		border-collapse: collapse;
+		border-radius: 10px;
+		width: 800px;
+		position: relative;
+		left: 90px;
+	}
+	.tb2{
+    border-collapse: collapse;
+		width: 400px;
+		border-radius: 10px;
+	}
+	.orbs, .main, .skills, .passive{
+		/*border-style: dotted;*/
+		position: relative;
+	}
+	.skills, .passive{
+
+	}
+	.char{
+		position: relative;
+		/*left: 250px;*/
+	}
+
+	.button {
+
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+ 	right: 200px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #eee4ff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #23e4ff;
+}
+
+/* Style the tab content */
+.tabcontent {
+	animation: fadeEffect 1s;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
