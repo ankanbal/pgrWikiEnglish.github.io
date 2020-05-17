@@ -1,7 +1,7 @@
 .content{
   padding: 40px;
   width: 1000px;
-  height: 3000px;
+  height: 4000px;
   position: relative;
   left:150px;
   z-index: 10;
@@ -11,29 +11,41 @@
     border-bottom: 1px solid black;
   }
   th{
-    background-color: #888888;
+    background-color: #d3d3d3;
   }
 	td, th{
-		border-collapse: collapse;
 		border: 1px solid black;
-		text-align: center;
+    /*border-top:solid black 1px;*/
+    text-align: center;
 	}
-	.tb1, .tb3, .tb4, .tb5, .tb6, .tb7, .tb8{
-		border-collapse: collapse;
-		border-radius: 10px;
+	.tb1, .tb3, .tb4, .tb5, .tb6, .tb7, .tb8, .tb9, .tb10, .tb11, .tb12, .tb13, .tb14, .tb15, .tb16, .tb17, .tb18, .tb19{
+		border: 1px solid black;
+    border-collapse: separate;
+		border-radius:10px;
+    -moz-border-radius:10px;
 		width: 800px;
 		position: relative;
 		left: 90px;
 	}
-  .tb8, .tb9{
+  .tb8, .tb9, .tb15, .tb16{
     left: 250px;
     width: 400px;
     height: 400px;
+    border-radius:10px;
   }
+
+  .tb17, .tb18, .tb19{
+    left: 380px;
+    width: 200px;
+    border-radius:10px;
+  }
+
 	.tb2{
-    border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse: separate;
 		width: 400px;
 		border-radius: 10px;
+    -moz-border-radius:10px;
 	}
 	.orbs, .main, .skills, .passive, .stats{
 		/*border-style: dotted;*/
@@ -47,14 +59,14 @@
 		/*left: 250px;*/
 	}
 
-	.button {
+	.button, .button1, .button2 {
     position: relative;
   left: 170px;
   display: inline-block;
   border-radius: 4px;
   background-color: #f4511e;
   border: none;
-  color: #FFFFFF;
+  color: #000000;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -62,16 +74,29 @@
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  transform: skew(-20deg);
+}
+span { 
+  transform: skew(21deg); 
+}
+.button1{
+  position: relative;
+  left: 90px;
+  width: 150px;
+}
+.button2{
+  position: relative;
+  left: 85px;
 }
 
-.button span {
+.button span, .button1 span, .button2 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.button span:after, .button1 span:after, .button2 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -80,21 +105,21 @@
   transition: 0.5s;
 }
 
-.button:hover span {
+.button:hover span, .button1:hover span, .button2:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.button:hover span:after, .button1:hover span:after, .button2:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-.tab {
+.tab{
   overflow: hidden;
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tab button{
   background-color: inherit;
  	right: 200px;
   border: none;
@@ -103,6 +128,10 @@
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+}
+
+.rec{
+  border-radius: 50%;
 }
 
 /* Change background color of buttons on hover */
@@ -116,7 +145,7 @@
 }
 
 /* Style the tab content */
-.tabcontent, .tabcontent1{
+.tabcontent, .tabcontent1, .tabcontent2, .tabcontent3{
 	animation: fadeEffect 1s;
   display: none;
   padding: 6px 12px;

@@ -163,7 +163,7 @@ The mysterious enemies who met the Grey Raven Squad for the first time in the op
 
 		
 		<script>
-			function openCity(evt, cityName) {
+			function openCity(evt, skills) {
 			  var i, tabcontent, tablinks;
 			  tabcontent = document.getElementsByClassName("tabcontent");
 			  for (i = 0; i < tabcontent.length; i++) {
@@ -173,15 +173,100 @@ The mysterious enemies who met the Grey Raven Squad for the first time in the op
 			  for (i = 0; i < tablinks.length; i++) {
 			    tablinks[i].className = tablinks[i].className.replace(" active", "");
 			  }
-			  document.getElementById(cityName).style.display = "block";
+			  document.getElementById(skills).style.display = "block";
 			  evt.currentTarget.className += " active";
 			}
-
-// Get the element with id="defaultOpen" and click on it
 			document.getElementById("defaultOpen").click();
 		</script>
 </div>
-<h1>Structure Costumes</h1>
+<h1>Structure Coatings</h1>
+<div class>
+		<div class="tab">
+		  <button class="button1" style="vertical-align:middle" onclick="opencos(event, 'co1')" id="defaultOpen2"><span>No 1</span></button>
+		  <button class="button1" style="vertical-align:middle" onclick="opencos(event, 'co2')"><span>No 2</span></button>
+		  <button class="button1" style="vertical-align:middle" onclick="opencos(event, 'co3')"><span>No 3</span></button>
+		  <button class="button1" style="vertical-align:middle" onclick="opencos(event, 'co4')"><span>No 4</span></button>
+		  <button class="button1" style="vertical-align:middle" onclick="opencos(event, 'co5')"><span>No 5</span></button>
+		</div>
+
+		<div class = "tabcontent2" id = "co1" >
+		<table class="tb10">
+			<tr>
+				<td rowspan="2"><img src="luciaS/luciaCost1.png"></td>
+				<td>Initial series-Lucia Crimson Abyss</td>
+			</tr>
+			<tr>
+				<td>The clothing that was dispensed when the structure was produced.</td>
+			</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent2" id = "co2">
+		<table class="tb11">
+			<tr>
+				<td rowspan="2"><img src="luciaS/luciaCost2.png"></td>
+				<td>Initial series-Lucia Crimson Abyss</td>
+			</tr>
+			<tr>
+				<td>After the structure is liberated, get permission to modify the clothing according to your preferences.</td>
+			</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent2" id = "co3">
+		<table class="tb12">
+			<tr>
+				<td rowspan="2"><img src="luciaS/luciaCost3.png"></td>
+				<td>Initial series-Lucia Crimson Abyss</td>
+			</tr>
+			<tr>
+				<td>After the structure was liberated to the highest level, the clothing modified according to personal wishes fully reflected the characteristics of the sea of ​​consciousness.</td>
+			</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent2" id = "co4">
+		<table class="tb13">
+			<tr>
+				<td rowspan="2"><img src="luciaS/luciaCost4.png"></td>
+				<td>Uniform Series-Lucia Crimson Abyss</td>
+			</tr>
+			<tr>
+				<td>Uniforms tailored for all the structures that have tied up with the Raven Squad are also the formal dress when attending various important ceremonies at the base.</td>
+			</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent2" id = "co5">
+		<table class="tb14">
+			<tr>
+				<td rowspan="2"><img src="luciaS/luciaCost5.png"></td>
+				<td>Deep Corrosion Series-Lucia Crimson Abyss</td>
+			</tr>
+			<tr>
+				<td>The high-hardness coating allows users to move freely in harsh wilderness. The simple design keeps energy consumption to a minimum, ensuring that the body can cope with any unexpected situation alone.</td>
+			</tr>
+		</table>
+		</div>
+
+		
+		<script>
+			function opencos(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent2");
+			  for (i = 0; i < tabcontent.length; i++) {
+			    tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("button1");
+			  for (i = 0; i < tablinks.length; i++) {
+			    tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+			document.getElementById("defaultOpen2").click();
+		</script>
+</div>
 <h1>Stats and Evaluations</h1>
 <div class="stats">
 	<table class="tb6">
@@ -247,47 +332,81 @@ The mysterious enemies who met the Grey Raven Squad for the first time in the op
 	</table>
 </div>
 <h1>Gear Recommendations</h1>
-<!--div class>
-		<div class="tab1">
-		  <button class="button" style="vertical-align:middle" onclick="openCity(event, 'no1')" id="defaultOpen"><span>No 1</span></button>
-		  <button class="button" style="vertical-align:middle" onclick="openCity(event, 'no2')"><span>No 2</span></button>
+<div class>
+		<div class="tab">
+		  <button class="button2" style="vertical-align:middle" onclick="openwep(event, 'no1')" id="defaultOpen1"><span>No 1</span></button>
+		  <button class="button2" style="vertical-align:middle" onclick="openwep(event, 'no2')"><span>No 2</span></button>
+		  <button class="button2" style="vertical-align:middle" onclick="openwep(event, 'no3')"><span>No 3</span></button>
+		  <button class="button2" style="vertical-align:middle" onclick="openwep(event, 'no4')"><span>No 4</span></button>
 		</div>
 
 		<div class = "tabcontent1" id = "no1" >
 		<table class="tb8">
-		<tr><td colspan="3"><img src="weapons/red_sakura.png"></td></tr>
+		<tr><td colspan="3"><img src="weapons/6/red_sakura.png"><br>Red Sakura</td></tr>
 		<tr>
-			<td><img src="memory/patton1_4.png"></td>
-			<td><img src="memory/patton2_5.png"></td>
-			<td><img src="memory/darwin3_6.png"></td>
+			<td><img src="memory/6/patton1_4.png"><br>1. Patton</td>
+			<td><img src="memory/6/patton2_5.png"><br>2. Patton</td>
+			<td><img src="memory/6/darwin3_6.png"><br>3. Darwin</td>
 		</tr>
 		<tr>
-			<td><img src="memory/patton1_4.png"></td>
-			<td><img src="memory/patton2_5.png"></td>
-			<td><img src="memory/darwin3_6.png"></td>
+			<td><img src="memory/6/patton1_4.png"><br>4. Patton</td>
+			<td><img src="memory/6/patton2_5.png"><br>5. Patton</td>
+			<td><img src="memory/6/darwin3_6.png"><br>6. Darwin</td>
 		</tr>
 		</table>
 		</div>
 
 		<div class = "tabcontent1" id = "no2">
 		<table class="tb9">
-		<tr><td colspan="3"><img src="weapons/nine_characters.png"></td></tr>
+		<tr><td colspan="3"><img src="weapons/5/nine_characters.png"><br>Nine Characters</td></tr>
 		<tr>
-			<td><img src="memory/patton1_4.png"></td>
-			<td><img src="memory/patton2_5.png"></td>
-			<td><img src="memory/darwin3_6.png"></td>
+			<td><img src="memory/6/patton1_4.png"><br>1. Patton</td>
+			<td><img src="memory/6/patton2_5.png"><br>2. Patton</td>
+			<td><img src="memory/6/darwin3_6.png"><br>3. Darwin</td>
 		</tr>
 		<tr>
-			<td><img src="memory/patton1_4.png"></td>
-			<td><img src="memory/patton2_5.png"></td>
-			<td><img src="memory/darwin3_6.png"></td>
+			<td><img src="memory/6/patton1_4.png"><br>4. Patton</td>
+			<td><img src="memory/6/patton2_5.png"><br>5. Patton</td>
+			<td><img src="memory/6/darwin3_6.png"><br>6. Darwin</td>
+		</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent1" id = "no3">
+		<table class="tb15">
+		<tr><td colspan="3"><img src="weapons/6/red_sakura.png"><br>Nine Characters</td></tr>
+		<tr>
+			<td><img src="memory/5/eve1_4.png"><br>1. Eve</td>
+			<td><img src="memory/5/eve2_5.png"><br>2. Eve</td>
+			<td><img src="memory/5/erwin3_6.png"><br>3. Erwin</td>
+		</tr>
+		<tr>
+			<td><img src="memory/5/eve1_4.png"><br>4. Eve</td>
+			<td><img src="memory/5/eve2_5.png"><br>5. Eve</td>
+			<td><img src="memory/5/erwin3_6.png"><br>6. Erwin</td>
+		</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent1" id = "no4">
+		<table class="tb16">
+		<tr><td colspan="3"><img src="weapons/5/nine_characters.png"><br>Nine Characters</td></tr>
+		<tr>
+			<td><img src="memory/5/eve1_4.png"><br>1. Eve</td>
+			<td><img src="memory/5/eve2_5.png"><br>2. Eve</td>
+			<td><img src="memory/5/erwin3_6.png"><br>3. Erwin</td>
+		</tr>
+		<tr>
+			<td><img src="memory/5/eve1_4.png"><br>4. Eve</td>
+			<td><img src="memory/5/eve2_5.png"><br>5. Eve</td>
+			<td><img src="memory/5/erwin3_6.png"><br>6. Erwin</td>
 		</tr>
 		</table>
 		</div>
 
 		
 		<script>
-			function openCity(evt, cityName) {
+			function openwep(evt, cityName) {
 			  var i, tabcontent, tablinks;
 			  tabcontent = document.getElementsByClassName("tabcontent1");
 			  for (i = 0; i < tabcontent.length; i++) {
@@ -300,12 +419,71 @@ The mysterious enemies who met the Grey Raven Squad for the first time in the op
 			  document.getElementById(cityName).style.display = "block";
 			  evt.currentTarget.className += " active";
 			}
-
-// Get the element with id="defaultOpen" and click on it
-			document.getElementById("defaultOpen").click();
+			document.getElementById("defaultOpen1").click();
 		</script>
-</div-->
+</div>
 <h1>Team Recommendations</h1>
+<div class>
+		<div class="tab">
+		  <button class="button" style="vertical-align:middle" onclick="openrec(event, 't1')" id="defaultOpen3"><span>No 1</span></button>
+		  <button class="button" style="vertical-align:middle" onclick="openrec(event, 't2')"><span>No 2</span></button>
+		  <button class="button" style="vertical-align:middle" onclick="openrec(event, 't3')"><span>No 3</span></button>
+		</div>
+
+		<div class = "tabcontent3" id = "t1" >
+		<table class="tb17">
+			<tr>
+				<td>
+					<img class="rec" src="luciaS/luciaS2.png"><br><br><br>
+					<img class="rec" src="kamuiS/kamuiS2.png"><br><br><br>
+					<img class="rec" src="livS/livS2.png">
+				</td>
+			</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent3" id = "t2">
+		<table class="tb18">
+			<tr>
+				<td>
+					<img class="rec" src="luciaS/luciaS2.png"><br><br><br>
+					<img class="rec" src="nanamiB/nanamiB2.png"><br><br><br>
+					<img class="rec" src="livB/livB2.png">
+				</td>
+			</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent3" id = "t3">
+		<table class="tb19">
+			<tr>
+				<td>
+					<img class="rec" src="luciaS/luciaS2.png"><br><br><br>
+					<img class="rec" src="kamuiA/kamuiA2.png"><br><br><br>
+					<img class="rec" src="livA/livA2.png">
+				</td>
+			</tr>
+		</table>
+		</div>
+
+		
+		<script>
+			function openrec(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent3");
+			  for (i = 0; i < tabcontent.length; i++) {
+			    tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("button");
+			  for (i = 0; i < tablinks.length; i++) {
+			    tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+			document.getElementById("defaultOpen3").click();
+		</script>
+</div>
 <h1>Pain Cage Tips</h1>
 The teammates for boss fight, equipped with full debuff memories, can be Liv-Eclipse (or any healer) + Ayla/Kamui-Heavy
 <h1>Warzone tips</h1>
