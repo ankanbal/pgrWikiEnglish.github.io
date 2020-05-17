@@ -5,13 +5,13 @@
 </head>
 <meta name = "viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-<body style="background-image: url('pgr1.jpeg')">
+<body style="background-image: url('pgr1.jpeg'); background-repeat:no-repeat; background-attachment: fixed">
 <div class="content">
 <div style=" overflow: auto">
 <div class = "char" style="float: right" >
 	<table class="tb2">
 		<tr>
-			<th colspan="2" height="50px"><h1>Lucia Crimson Abyss</h1></th>
+			<th colspan="2" height="50px"><h2>Lucia Crimson Abyss</h2></th>
 		</tr>
 		<tr>
 			<td colspan="2">
@@ -46,20 +46,23 @@
 			<th rowspan="4">Voice actors</th>
 		</tr>
 		<tr>
-			<td>Ishikawa Yui</td>
+			<td>Ishikawa Yui (Japanese VA)</td>
 		</tr>
 		<tr>
-			<td>Little N</td>
+			<td>Little N (Mandarin VA)</td>
 		</tr>
 		<tr>
-			<td>Tail Fox Hall</td>
+			<td>Tail Fox Hall (Cantonese VA)</td>
 		</tr>
 	</table>
 </div>
+<div>
 <h1>Introduction</h1>
 The mysterious enemies who met the Grey Raven Squad for the first time in the operation of City 015 left a strong and casual impression. There seems to be unusual attention to the Grey Raven Squad, especially Lucia.
 </div>
-
+</div>
+<br>
+<h1>Skills</h1>
 <div class>
 		<div class="tab">
 		  <button class="button" style="vertical-align:middle" onclick="openCity(event, 'orb')" id="defaultOpen"><span>Orbs</span></button>
@@ -166,7 +169,7 @@ The mysterious enemies who met the Grey Raven Squad for the first time in the op
 			  for (i = 0; i < tabcontent.length; i++) {
 			    tabcontent[i].style.display = "none";
 			  }
-			  tablinks = document.getElementsByClassName("tablinks");
+			  tablinks = document.getElementsByClassName("button");
 			  for (i = 0; i < tablinks.length; i++) {
 			    tablinks[i].className = tablinks[i].className.replace(" active", "");
 			  }
@@ -178,6 +181,134 @@ The mysterious enemies who met the Grey Raven Squad for the first time in the op
 			document.getElementById("defaultOpen").click();
 		</script>
 </div>
+<h1>Stats and Evaluations</h1>
+<div class="stats">
+	<table class="tb6">
+		<tr>
+			<th colspan="2">Level 1 Base rank</th>
+			<th colspan="2">Level 80 Base rank</th>
+		</tr>
+		<tr>
+			<td>HP</td>
+			<td>406</td>
+			<td>HP</td>
+			<td>1820</td>
+		</tr>
+		<tr>
+			<td>Crit</td>
+			<td>94</td>
+			<td>Crit</td>
+			<td>421</td>
+		</tr>
+		<tr>
+			<td>Atk</td>
+			<td>60</td>
+			<td>Atk</td>
+			<td>273</td>
+		</tr>
+		<tr>
+			<td>Def</td>
+			<td>45</td>
+			<td>Def</td>
+			<td>201</td>
+		</tr>
+	</table>
+</div>
+<br><br>
+<div class="evals">
+	<table class="tb7">
+		<tr><th colspan="2">Evaluations</th></tr>
+		<tr>
+			<td>Survive</td>
+			<td>B</td>
+		</tr>
+		<tr>
+			<td>Breakout</td>
+			<td>S</td>
+		</tr>
+		<tr>
+			<td>Auxiliary</td>
+			<td>C</td>
+		</tr>
+		<tr>
+			<td>Range</td>
+			<td>A</td>
+		</tr>
+		<tr>
+			<td>Monomer</td>
+			<td>S</td>
+		</tr>
+		<tr>
+			<td>Difficulty</td>
+			<td>C</td>
+		</tr>
+		<tr><td colspan="3"><img src="luciaS/luciaStat.png"></td></tr>
+	</table>
+</div>
+<h1>Gear Recommendations</h1>
+<!--div class>
+		<div class="tab1">
+		  <button class="button" style="vertical-align:middle" onclick="openCity(event, 'no1')" id="defaultOpen"><span>No 1</span></button>
+		  <button class="button" style="vertical-align:middle" onclick="openCity(event, 'no2')"><span>No 2</span></button>
+		</div>
+
+		<div class = "tabcontent1" id = "no1" >
+		<table class="tb8">
+		<tr><td colspan="3"><img src="weapons/red_sakura.png"></td></tr>
+		<tr>
+			<td><img src="memory/patton1_4.png"></td>
+			<td><img src="memory/patton2_5.png"></td>
+			<td><img src="memory/darwin3_6.png"></td>
+		</tr>
+		<tr>
+			<td><img src="memory/patton1_4.png"></td>
+			<td><img src="memory/patton2_5.png"></td>
+			<td><img src="memory/darwin3_6.png"></td>
+		</tr>
+		</table>
+		</div>
+
+		<div class = "tabcontent1" id = "no2">
+		<table class="tb9">
+		<tr><td colspan="3"><img src="weapons/nine_characters.png"></td></tr>
+		<tr>
+			<td><img src="memory/patton1_4.png"></td>
+			<td><img src="memory/patton2_5.png"></td>
+			<td><img src="memory/darwin3_6.png"></td>
+		</tr>
+		<tr>
+			<td><img src="memory/patton1_4.png"></td>
+			<td><img src="memory/patton2_5.png"></td>
+			<td><img src="memory/darwin3_6.png"></td>
+		</tr>
+		</table>
+		</div>
+
+		
+		<script>
+			function openCity(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent1");
+			  for (i = 0; i < tabcontent.length; i++) {
+			    tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("button");
+			  for (i = 0; i < tablinks.length; i++) {
+			    tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+
+// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+		</script>
+</div-->
+<h1>Team Recommendations</h1>
+<h1>Pain Cage Tips</h1>
+The teammates for boss fight, equipped with full debuff memories, can be Liv-Eclipse (or any healer) + Ayla/Kamui-Heavy
+<h1>Warzone tips</h1>
+High Burst, AOE abilities, no obvious shortcomings when being paired with teammates who can gather enemies (eg. Karen-Explosion) + provide debuffs (eg. Kamui-Heavy)
 </div>
 </body>
 </html>

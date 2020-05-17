@@ -1,29 +1,41 @@
 .content{
+  padding: 40px;
   width: 1000px;
-  height: 2000px;
+  height: 3000px;
   position: relative;
-  left:220px;
+  left:150px;
   z-index: 10;
   background-color: #ffffff;	
 	}
+  h1{
+    border-bottom: 1px solid black;
+  }
+  th{
+    background-color: #888888;
+  }
 	td, th{
 		border-collapse: collapse;
 		border: 1px solid black;
 		text-align: center;
 	}
-	.tb1, .tb3, .tb4, .tb5{
+	.tb1, .tb3, .tb4, .tb5, .tb6, .tb7, .tb8{
 		border-collapse: collapse;
 		border-radius: 10px;
 		width: 800px;
 		position: relative;
 		left: 90px;
 	}
+  .tb8, .tb9{
+    left: 250px;
+    width: 400px;
+    height: 400px;
+  }
 	.tb2{
     border-collapse: collapse;
 		width: 400px;
 		border-radius: 10px;
 	}
-	.orbs, .main, .skills, .passive{
+	.orbs, .main, .skills, .passive, .stats{
 		/*border-style: dotted;*/
 		position: relative;
 	}
@@ -36,7 +48,8 @@
 	}
 
 	.button {
-
+    position: relative;
+  left: 170px;
   display: inline-block;
   border-radius: 4px;
   background-color: #f4511e;
@@ -103,11 +116,11 @@
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabcontent, .tabcontent1{
 	animation: fadeEffect 1s;
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  
   border-top: none;
 }
 
